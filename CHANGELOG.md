@@ -45,6 +45,11 @@ tagged release also ships native binaries for Linux, macOS, and Windows.
 
 ### Added
 
+- **A BioSimulators connector.** `biosimulators` searches the public registry of
+  biological simulation tools by name, algorithm (KiSAO id or name) or model
+  format such as SBML, CellML or NeuroML, and fetches one tool's record,
+  optionally at a version (`tellurium/2.2.8`). It needs no key and does not run
+  simulations.
 - Session handoffs report the characters actually omitted, account for retained tails and trimmed whitespace, and honor zero or tiny excerpt limits. Command argument hints now list numbered placeholders in numeric order.
 
 - **An NMR compound-inference skill.** `nmr-compound-inference` reads 1D ¹H or

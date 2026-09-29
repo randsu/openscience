@@ -15,10 +15,20 @@ import { biogrid } from "./biogrid"
 import { intact } from "./intact"
 import { wikipathways } from "./wikipathways"
 import { opentargets } from "./opentargets"
+import { biosimulators } from "./biosimulators"
 
 /** All pathway/interaction connectors in this batch, in catalog order. */
-const pathwayConnectors: Connector[] = [reactome, kegg, stringdb, biogrid, intact, wikipathways, opentargets]
+const pathwayConnectors: Connector[] = [
+  reactome,
+  kegg,
+  stringdb,
+  biogrid,
+  intact,
+  wikipathways,
+  opentargets,
+  biosimulators,
+]
 
-export { reactome, kegg, stringdb, biogrid, intact, wikipathways, opentargets }
+export { reactome, kegg, stringdb, biogrid, intact, wikipathways, opentargets, biosimulators }
 
 export default pathwayConnectors

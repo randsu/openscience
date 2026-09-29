@@ -44,6 +44,7 @@ const SAMPLE: Record<string, string> = {
   intact: "EBI-77613",
   wikipathways: "WP554",
   opentargets: "ENSG00000141510",
+  biosimulators: "tellurium",
   pubmed: "10508479",
   europepmc: "10508479",
   biorxiv: "10.1101/2020.01.30.927871",

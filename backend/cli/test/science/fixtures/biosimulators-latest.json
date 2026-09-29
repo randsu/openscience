@@ -1,0 +1,739 @@
+[
+  {
+    "id": "tellurium",
+    "name": "tellurium",
+    "version": "2.2.10",
+    "description": "tellurium is a Python-based environment for model building, simulation, and analysis that facilitates reproducibility of models in systems and synthetic biology.",
+    "image": {
+      "url": "ghcr.io/biosimulators/tellurium:2.2.10"
+    },
+    "license": {
+      "namespace": "SPDX",
+      "id": "Apache-2.0"
+    },
+    "interfaceTypes": [
+      "library",
+      "command-line application",
+      "desktop application",
+      "BioSimulators Docker image"
+    ],
+    "algorithms": [
+      {
+        "id": "cvode",
+        "name": "C-language Variable-coefficient Ordinary Differential Equation solver",
+        "kisaoId": {
+          "namespace": "KISAO",
+          "id": "KISAO_0000019"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "namespace": "SBO",
+            "id": "SBO_0000293"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      },
+      {
+        "id": "euler",
+        "name": "Forward Euler method",
+        "kisaoId": {
+          "namespace": "KISAO",
+          "id": "KISAO_0000030"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "namespace": "SBO",
+            "id": "SBO_0000293"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      },
+      {
+        "id": "runge_kutta_4",
+        "name": "Runge-Kutta fourth order method",
+        "kisaoId": {
+          "namespace": "KISAO",
+          "id": "KISAO_0000032"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "namespace": "SBO",
+            "id": "SBO_0000293"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      },
+      {
+        "id": "runge_kutta_45",
+        "name": "Fehlberg method",
+        "kisaoId": {
+          "namespace": "KISAO",
+          "id": "KISAO_0000086"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "namespace": "SBO",
+            "id": "SBO_0000293"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      },
+      {
+        "id": "gillespie",
+        "name": "Gillespie direct method of the Stochastic Simulation Algorithm (SSA)",
+        "kisaoId": {
+          "namespace": "KISAO",
+          "id": "KISAO_0000029"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "namespace": "SBO",
+            "id": "SBO_0000295"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      },
+      {
+        "id": "nleq2",
+        "name": "Newton-type method for solveing non-linear (NL) equations (EQ)",
+        "kisaoId": {
+          "namespace": "KISAO",
+          "id": "KISAO_0000569"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "namespace": "SBO",
+            "id": "SBO_0000293"
+          }
+        ],
+        "simulationTypes": [
+          "SedSteadyStateSimulation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "copasi",
+    "name": "COPASI",
+    "version": "4.45.296",
+    "description": "COPASI is a C++-based software application for the simulation and analysis of biochemical networks and their dynamics.",
+    "image": {
+      "url": "ghcr.io/biosimulators/copasi:4.45.296"
+    },
+    "license": {
+      "namespace": "SPDX",
+      "id": "Artistic-2.0"
+    },
+    "interfaceTypes": [
+      "web service",
+      "desktop application",
+      "library",
+      "command-line application",
+      "BioSimulators Docker image"
+    ],
+    "algorithms": [
+      {
+        "id": "lsoda_or_lsodar",
+        "name": "Automatically use LSODA or LSODAR as apropriate for the given problem. Use LSODA if the problem has no roots. Use LSODAR if the problem has roots.",
+        "kisaoId": {
+          "namespace": "KISAO",
+          "id": "KISAO_0000560"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "namespace": "SBO",
+            "id": "SBO_0000293"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      },
+      {
+        "id": "radau5",
+        "name": "Implicit Runge-Kutta method based on Radau quadrature.",
+        "kisaoId": {
+          "namespace": "KISAO",
+          "id": "KISAO_0000304"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "namespace": "SBO",
+            "id": "SBO_0000293"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      },
+      {
+        "id": "gibson_bruck",
+        "name": "Gibson-Bruck next reaction method",
+        "kisaoId": {
+          "namespace": "KISAO",
+          "id": "KISAO_0000027"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "namespace": "SBO",
+            "id": "SBO_0000295"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      },
+      {
+        "id": "ssa",
+        "name": "Gillespie's direct method",
+        "kisaoId": {
+          "namespace": "KISAO",
+          "id": "KISAO_0000029"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "namespace": "SBO",
+            "id": "SBO_0000295"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      },
+      {
+        "id": "tau_leap",
+        "name": "tau-leaping method",
+        "kisaoId": {
+          "namespace": "KISAO",
+          "id": "KISAO_0000039"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "namespace": "SBO",
+            "id": "SBO_0000295"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      },
+      {
+        "id": "adaptive_ssa_tau_leap",
+        "name": "adaptive explicit-implicit tau-leaping method",
+        "kisaoId": {
+          "namespace": "KISAO",
+          "id": "KISAO_0000048"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "namespace": "SBO",
+            "id": "SBO_0000295"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      },
+      {
+        "id": "hybrid-runge-kutta",
+        "name": "Hybrid discrete/continuous Runge-Kutta",
+        "kisaoId": {
+          "namespace": "KISAO",
+          "id": "KISAO_0000561"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "namespace": "SBO",
+            "id": "SBO_0000690"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      },
+      {
+        "id": "hybrid-lsoda",
+        "name": "Hybrid discrete/continuous LSODA",
+        "kisaoId": {
+          "namespace": "KISAO",
+          "id": "KISAO_0000562"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "namespace": "SBO",
+            "id": "SBO_0000690"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      },
+      {
+        "id": "hybrid-rk45",
+        "name": "Hybrid discrete/continuous Fehlberg method",
+        "kisaoId": {
+          "namespace": "KISAO",
+          "id": "KISAO_0000563"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "namespace": "SBO",
+            "id": "SBO_0000690"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      },
+      {
+        "id": "ri5",
+        "name": "Stochastic second order Runge-Kutta method",
+        "kisaoId": {
+          "namespace": "KISAO",
+          "id": "KISAO_0000566"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "namespace": "SBO",
+            "id": "SBO_0000676"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cobrapy",
+    "name": "COBRApy",
+    "version": "0.24.0",
+    "description": "COBRApy is a Python package that provides a simple interface to metabolic constraint-based reconstruction and analysis.",
+    "image": {
+      "url": "ghcr.io/biosimulators/cobrapy:0.24.0"
+    },
+    "license": {
+      "id": "LGPL-2.0-or-later",
+      "namespace": "SPDX"
+    },
+    "interfaceTypes": [
+      "library",
+      "command-line application",
+      "BioSimulators Docker image"
+    ],
+    "algorithms": [
+      {
+        "id": "fba",
+        "name": "flux balance analysis",
+        "kisaoId": {
+          "id": "KISAO_0000437",
+          "namespace": "KISAO"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "id": "SBO_0000624",
+            "namespace": "SBO"
+          }
+        ],
+        "simulationTypes": [
+          "SedSteadyStateSimulation"
+        ]
+      },
+      {
+        "id": "fva",
+        "name": "flux variability analysis",
+        "kisaoId": {
+          "id": "KISAO_0000526",
+          "namespace": "KISAO"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "id": "SBO_0000624",
+            "namespace": "SBO"
+          }
+        ],
+        "simulationTypes": [
+          "SedSteadyStateSimulation"
+        ]
+      },
+      {
+        "id": "pfba",
+        "name": "parsimonious enzyme usage flux balance analysis",
+        "kisaoId": {
+          "id": "KISAO_0000528",
+          "namespace": "KISAO"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "id": "SBO_0000624",
+            "namespace": "SBO"
+          }
+        ],
+        "simulationTypes": [
+          "SedSteadyStateSimulation"
+        ]
+      },
+      {
+        "id": "geometric fba",
+        "name": "geometric flux balance analysis",
+        "kisaoId": {
+          "id": "KISAO_0000527",
+          "namespace": "KISAO"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_2585"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "id": "SBO_0000624",
+            "namespace": "SBO"
+          }
+        ],
+        "simulationTypes": [
+          "SedSteadyStateSimulation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "neuron",
+    "name": "NEURON",
+    "version": "8.0.2",
+    "description": "Empirically-based simulator for modeling neurons and networks of neurons.",
+    "image": {
+      "url": "ghcr.io/biosimulators/neuron:8.0.2"
+    },
+    "license": {
+      "id": "BSD-3-Clause",
+      "namespace": "SPDX"
+    },
+    "interfaceTypes": [
+      "library",
+      "desktop application",
+      "BioSimulators Docker image"
+    ],
+    "algorithms": [
+      {
+        "id": "cvode",
+        "name": "C-language Variable-coefficient Ordinary Differential Equation solver",
+        "kisaoId": {
+          "id": "KISAO_0000019",
+          "namespace": "KISAO"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_9004"
+          },
+          {
+            "namespace": "EDAM",
+            "id": "format_3971"
+          },
+          {
+            "namespace": "EDAM",
+            "id": "format_9005"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "id": "SBO_0000293",
+            "namespace": "SBO"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bionetgen",
+    "name": "BioNetGen",
+    "version": "2.8.0",
+    "description": "BioNetGen is an open-source software package for rule-based modeling of complex biochemical systems.",
+    "image": {
+      "url": "ghcr.io/biosimulators/bionetgen:2.8.0"
+    },
+    "license": {
+      "id": "MIT",
+      "namespace": "SPDX"
+    },
+    "interfaceTypes": [
+      "desktop application",
+      "command-line application",
+      "BioSimulators Docker image"
+    ],
+    "algorithms": [
+      {
+        "id": "ode",
+        "name": "CVODE",
+        "kisaoId": {
+          "id": "KISAO_0000019",
+          "namespace": "KISAO"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_3972"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "id": "SBO_0000293",
+            "namespace": "SBO"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      },
+      {
+        "id": "ssa",
+        "name": "Stochastic simulation algorithm",
+        "kisaoId": {
+          "id": "KISAO_0000029",
+          "namespace": "KISAO"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_3972"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "id": "SBO_0000295",
+            "namespace": "SBO"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      },
+      {
+        "id": "pla",
+        "name": "Partitioned Leaping Algorithm",
+        "kisaoId": {
+          "id": "KISAO_0000524",
+          "namespace": "KISAO"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_3972"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "id": "SBO_0000295",
+            "namespace": "SBO"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      },
+      {
+        "id": "nf",
+        "name": "Network-free simulation",
+        "kisaoId": {
+          "id": "KISAO_0000263",
+          "namespace": "KISAO"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_3972"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "id": "SBO_0000680",
+            "namespace": "SBO"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "netpyne",
+    "name": "NetPyNe",
+    "version": "1.0.0.2",
+    "description": "Python package to facilitate the development, simulation, parallelization, analysis, and optimization of biological neuronal networks using the NEURON simulator.",
+    "image": {
+      "url": "ghcr.io/biosimulators/netpyne:1.0.0.2"
+    },
+    "license": {
+      "id": "MIT",
+      "namespace": "SPDX"
+    },
+    "interfaceTypes": [
+      "library",
+      "web application",
+      "BioSimulators Docker image"
+    ],
+    "algorithms": [
+      {
+        "id": "cvode",
+        "name": "C-language Variable-coefficient Ordinary Differential Equation solver",
+        "kisaoId": {
+          "id": "KISAO_0000019",
+          "namespace": "KISAO"
+        },
+        "modelFormats": [
+          {
+            "namespace": "EDAM",
+            "id": "format_9004"
+          },
+          {
+            "namespace": "EDAM",
+            "id": "format_3971"
+          },
+          {
+            "namespace": "EDAM",
+            "id": "format_9005"
+          }
+        ],
+        "modelingFrameworks": [
+          {
+            "id": "SBO_0000293",
+            "namespace": "SBO"
+          }
+        ],
+        "simulationTypes": [
+          "SedUniformTimeCourseSimulation"
+        ]
+      }
+    ]
+  }
+]

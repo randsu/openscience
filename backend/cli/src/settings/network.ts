@@ -113,6 +113,7 @@ export namespace Network {
         "reactome.org",
         "api.platform.opentargets.org",
         "wikipathways.org",
+        "api.biosimulators.org",
       ],
     },
     {
